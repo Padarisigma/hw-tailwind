@@ -53,10 +53,10 @@ function App() {
     <button onClick={handleClick} className='border-solid border-2 px-[20px] rounded-[5px] py-[5px]'>Dark</button>
       </div>
     </div>
-      <div className='grid grid-cols-1 sm:grid-cols-3 gap-[40px] w-[100%] sm:w-[90%] m-auto mb-[60px]'>
+      <div className='grid grid-cols-1 sm:grid-cols-3 gap-[20px] sm:gap-[40px] w-[90%] sm:w-[90%] m-auto mb-[60px]'>
          {
           data.map((user)=>{
-            return <div key={user.id} className='px-[30px] flex flex-col gap-[10px] items-center py-[20px] '>
+            return <div key={user.id} className='px-[20px] flex flex-col gap-[10px] items-center py-[20px] '>
             <p className='text-[20px] tracking-[3px] italic'>{user.name}</p>
             <div className='flex gap-[20px]'>
             <Delete id={user.id} get={get} api={Api} />
